@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap');
+main {
+  font-family: "Outfit";
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card img{
+  width: 320px;
+  border-radius:7px;
+  margin: auto;
+}
+.card .image-link{
+  position: relative;
+  display: flex;
+  border-radius: 7px;
+}
+.card .image-link::before{
+  content: '';
+  background-color: cyan;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.4;
+  display: none;
+}
+
+.card .image-link::after {
+  content: '';
+  background: url(../images/icon-view.svg) no-repeat center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+.card .image-link:hover::before, .card .image-link:hover::after{
+  display: block;
+  border-radius: 7px;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.eth img {
+  width: 10px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.descricao {
+  font-size: 14px;
+}
+.descricao p {
+  margin-top: 20px;
+  color: gray;
+}
+.descricao, .valor {
+  width: 100%;
+  padding: 15px 25px;
+}
+.valor .eth {
+  color: hsl(175, 91%, 48%);
+}
+.destaque {
+  color: hsl(216, 27%, 43%);
+  margin: 1px;
+}
+.valor, .eth{
+  display: flex;
+  justify-content: space-between;
+}
+.dias img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.dias {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.criador {
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  
+}
+.criador img{
+  width: 30px;
+  border-radius: 50px;
+  border: 2px solid yellow;
+  margin-right: 10px;
+}
+
+.descricao h1:hover {
+  color: hsl(175, 91%, 48%);
+  cursor: pointer;
+}
+
+.criador p:hover {
+  color: hsl(175, 91%, 48%);
+   cursor: pointer;
+}
